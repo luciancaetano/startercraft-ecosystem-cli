@@ -5,7 +5,9 @@ import providerGenerator from './generators/provider/index';
 import subcomponentGenerator from './generators/subcomponent/index';
 
 export default function setupPlopGenerators(plop: any): void {
-    plop.setGenerator('component', componentGenerator);
+    plop.setGenerator('element', componentGenerator('element'));
+    plop.setGenerator('layout', componentGenerator('layout'));
+    plop.setGenerator('page', componentGenerator('page'));
     plop.setGenerator('feature', featureGenerator);
     plop.setGenerator('provider', providerGenerator);
     plop.setGenerator('subcomponent', subcomponentGenerator);

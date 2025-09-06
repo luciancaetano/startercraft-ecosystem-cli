@@ -1,10 +1,13 @@
 {
   "name": "@startercraft/cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Plop cli for StarterCraft",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "exports": {
     ".": {
       "import": "./dist/index.js",
